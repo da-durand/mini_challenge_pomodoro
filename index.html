@@ -16,62 +16,69 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     <h1>Kanban Pomodoro</h1>
                 </div>
                 <div class="row">
-                    <div class="col-9"><input type="text" name="task" id="task" placeholder="Nouvelle tâche"
-                            class="col-12"></div>
-                    <div class="col-3"><button class="col-12">Ajouter</button></div>
+                    <div class="col-9">
+                        <div class="row border border-dark">
+                            <input class="col-12" type="text" name="task" id="task" placeholder="Nouvelle tâche">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row border border-dark">
+                            <button class="col-12" id="btnadd">Ajouter</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-4">
-                        <div class="row">
-                            <div class="col-12">A faire</div>
+                    <div class="col-4 border border-dark">
+                        <div class="row border-bottom border-dark">
+                            <h2 class="col-12 text-center">A faire</h2>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <ul>
-                                    <li>
-                                        Tâches 3 <button class="delete"><i class="fas fa-times-circle"></i></button>
+                                <ul class="list-unstyled text-center">
+                                    <li class="justify-content-between d-flex">
+                                        <p>Tâches 3</p><button><i class="fas fa-times-circle"></i></button>
                                     </li>
-                                    <li>
-                                        Tâches 4 <button class="delete"><i class="fas fa-times-circle"></i></button>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Tâches 4</p><button><i class="fas fa-times-circle"></i></button>
                                     </li>
-                                    <li>
-                                        Tâches 5 <button class="delete"><i class="fas fa-times-circle"></i></button>
+                                    <li class="justify-content-between d-flex">
+                                        <p>Tâches 5</p><button><i class="fas fa-times-circle"></i></button>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <div class="col-12">En cours</div>
+                    <div class="col-4 border border-dark">
+                        <div class="row border-bottom border-dark"">
+                            <h2 class="col-12 text-center">En cours</h2>
                         </div>
-                        <div class="row">
-                            <div class="col-10">
-                                <div>timer à définir</div>
+                        <div class="row justify-content-center">
+                            <div class="col-10 border border-dark">
+                                <div class="text-center">00:00</div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-8">
+                        <div class="row justify-content-center">
+                            <div class="col-8 text-center">
                                 <button>Début</button>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-8">
+                        <div class="row justify-content-center">
+                            <div class="col-8 text-center">
                                 <button>Pause</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <div class="col-12">Fait</div>
+                    <div class="col-4 border border-dark">
+                        <div class="row border-bottom border-dark"">
+                            <h2 class="col-12 text-center">Fait</h2>
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <ul>
+                                <ul class="list-unstyled flex-column">
                                     <li>
                                         Tâches 1
                                     </li>
