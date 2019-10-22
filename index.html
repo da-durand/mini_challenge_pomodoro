@@ -9,6 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link rel="stylesheet" href="./static/style.css">
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
     <title>Document</title>
 </head>
 
@@ -38,15 +39,15 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <ul class="list-unstyled text-center">
+                                <ul id="taskList" class="list-unstyled text-center">
                                     <li class="justify-content-between d-flex">
-                                        <p>Tâches 3</p><button><i class="fas fa-times-circle"></i></button>
+                                        <p>Tâches 3</p><button class="delTask taskElement"><i class="fas fa-times-circle"></i></button>
                                     </li>
-                                    <li class="justify-content-between d-flex">
-                                        <p>Tâches 4</p><button><i class="fas fa-times-circle"></i></button>
+                                    <li class="justify-content-between d-flex taskElement">
+                                        <p>Tâches 4</p><button class="delTask"><i class="fas fa-times-circle"></i></button>
                                     </li>
-                                    <li class="justify-content-between d-flex">
-                                        <p>Tâches 5</p><button><i class="fas fa-times-circle"></i></button>
+                                    <li class="justify-content-between d-flex taskElement">
+                                        <p>Tâches 5</p><button class="delTask"><i class="fas fa-times-circle"></i></button>
                                     </li>
                                 </ul>
                             </div>
