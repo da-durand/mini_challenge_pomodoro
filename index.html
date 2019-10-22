@@ -9,7 +9,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
     <link rel="stylesheet" href="./static/style.css">
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>Document</title>
 </head>
 
@@ -40,14 +41,17 @@
                         <div class="row">
                             <div class="col-12">
                                 <ul id="taskList" class="list-unstyled text-center">
-                                    <li class="justify-content-between d-flex">
-                                        <p>Tâches 3</p><button class="delTask taskElement"><i class="fas fa-times-circle"></i></button>
+                                    <li class="justify-content-between d-flex taskElement">
+                                        <p>Tâches 3</p><button class="delTask"><i
+                                                class="fas fa-times-circle"></i></button>
                                     </li>
                                     <li class="justify-content-between d-flex taskElement">
-                                        <p>Tâches 4</p><button class="delTask"><i class="fas fa-times-circle"></i></button>
+                                        <p>Tâches 4</p><button class="delTask"><i
+                                                class="fas fa-times-circle"></i></button>
                                     </li>
                                     <li class="justify-content-between d-flex taskElement">
-                                        <p>Tâches 5</p><button class="delTask"><i class="fas fa-times-circle"></i></button>
+                                        <p>Tâches 5</p><button class="delTask"><i
+                                                class="fas fa-times-circle"></i></button>
                                     </li>
                                 </ul>
                             </div>
@@ -55,7 +59,7 @@
                     </div>
                     <div class="col-4 border border-dark">
                         <div class="row border-bottom border-dark"">
-                            <h2 class="col-12 text-center">En cours</h2>
+                            <h2 class=" col-12 text-center">En cours</h2>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-10 border border-dark">
@@ -64,18 +68,23 @@
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-8 text-center">
-                                <button>Début</button>
+                                <button id="start">Début</button>
                             </div>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-8 text-center">
-                                <button>Pause</button>
+                                <button id="pause">Pause</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="taskTimer" class="col-12">
+                                
                             </div>
                         </div>
                     </div>
                     <div class="col-4 border border-dark">
                         <div class="row border-bottom border-dark"">
-                            <h2 class="col-12 text-center">Fait</h2>
+                            <h2 class=" col-12 text-center">Fait</h2>
                         </div>
                         <div class="row">
                             <div class="col-12">
