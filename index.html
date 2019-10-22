@@ -42,15 +42,15 @@
                             <div class="col-12">
                                 <ul id="taskList" class="list-unstyled text-center">
                                     <li class="justify-content-between d-flex taskElement">
-                                        <p>Tâches 3</p><button class="delTask"><i
+                                        Tâches 3<button class="delTask"><i
                                                 class="fas fa-times-circle"></i></button>
                                     </li>
                                     <li class="justify-content-between d-flex taskElement">
-                                        <p>Tâches 4</p><button class="delTask"><i
+                                        Tâches 4<button class="delTask"><i
                                                 class="fas fa-times-circle"></i></button>
                                     </li>
                                     <li class="justify-content-between d-flex taskElement">
-                                        <p>Tâches 5</p><button class="delTask"><i
+                                        Tâches 5<button class="delTask"><i
                                                 class="fas fa-times-circle"></i></button>
                                     </li>
                                 </ul>
@@ -58,28 +58,26 @@
                         </div>
                     </div>
                     <div class="col-4 border border-dark">
-                        <div class="row border-bottom border-dark"">
+                        <div class="row border-bottom border-dark">
                             <h2 class=" col-12 text-center">En cours</h2>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-10 border border-dark">
-                                <div class="text-center">00:00</div>
+                                <div class="text-center" id="timer"></div>
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-8 text-center">
-                                <button id="start">Début</button>
+                            <div class="col-9 text-center">
+                                <button id="start" class="w-100">Début</button>
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-8 text-center">
-                                <button id="pause">Pause</button>
+                            <div class="col-9 text-center">
+                                <button id="pause" class="w-100">Pause</button>
                             </div>
                         </div>
                         <div class="row">
-                            <div id="taskTimer" class="col-12">
-                                
-                            </div>
+                            <div id="taskTimer" class="col-12"></div>
                         </div>
                     </div>
                     <div class="col-4 border border-dark">
@@ -88,7 +86,7 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <ul class="list-unstyled flex-column">
+                                <ul class="list-unstyled flex-column" id="finishList">
                                     <li>
                                         Tâches 1
                                     </li>
